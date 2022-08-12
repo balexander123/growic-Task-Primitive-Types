@@ -39,6 +39,10 @@ module.exports = async ({ getNamedAccounts, deployments, getChainId }) => {
     //const YourContract = await ethers.getContractAt('YourContract', "0xaAC799eC2d00C013f1F11c37E654e59B0429DF6A") //<-- if you want to instantiate a version of a contract at a specific address!
   */
 
+    //await YourContract.transferOwnership(
+    //  "0x2fF7015f8Ea09169883C7F884bc53C123b370F5B"
+    //);
+
   /*
   //If you want to send value to an address from the deployer
   const deployerWallet = ethers.provider.getSigner()
