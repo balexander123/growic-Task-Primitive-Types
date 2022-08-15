@@ -2,14 +2,8 @@ pragma solidity >=0.8.0 <0.9.0;
 //SPDX-License-Identifier: MIT
 
 import "hardhat/console.sol";
-//import "@openzeppelin/contracts/access/Ownable.sol";
-
-// https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/access/Ownable.sol
 
 contract YourContract {
-    //event SetPurpose(address sender, string purpose);
-
-    //string public purpose = "Hey, Yo!!!";
 
     address public owner = 0x2fF7015f8Ea09169883C7F884bc53C123b370F5B;
 
@@ -43,13 +37,6 @@ contract YourContract {
         console.log("Student ID: ", _student.studentID);
     }
 
-    //function setPurpose(string memory newPurpose) public onlyOwner {
-    //    purpose = newPurpose;
-    //    console.log(msg.sender, "set purpose to", purpose);
-    //    emit SetPurpose(msg.sender, purpose);
-    //}
-
-    // to support receiving ETH by default
     receive() external payable {}
 
     fallback() external payable {}
